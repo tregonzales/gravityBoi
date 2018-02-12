@@ -24,7 +24,7 @@ public class LaserController : MonoBehaviour {
         int currentFrameIndex = 0;
         while (true) {
             spriteRenderer.sprite = frames [currentFrameIndex % 2];
-            yield return new WaitForSeconds(.02f); // this halts the functions execution for x seconds. Can only be used in coroutines.
+            yield return new WaitForSeconds(.05f); // this halts the functions execution for x seconds. Can only be used in coroutines.
             currentFrameIndex++;
         }
     }
@@ -34,5 +34,9 @@ public class LaserController : MonoBehaviour {
 		if (explosionSound != null) {
             AudioSource.PlayClipAtPoint(explosionSound, transform.position);
         }
+	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		Destroy(other.gameObject);
 	}
 }
