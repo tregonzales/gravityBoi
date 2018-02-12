@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 		//use the boost with left click, also reduce how many boosts the character has this level
 		if (Input.GetMouseButtonDown(0)) {
 			if (numBoosts != 0) {
-				boi.velocity = curSpeed*direction;
+				boi.velocity += curSpeed*direction;
 				numBoosts--;
 			}
 		}
