@@ -18,8 +18,10 @@ public class CameraController : MonoBehaviour {
     void Update () 
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-		// var camSpot = player.transform.position + offset;
-		// camSpot.y = 0;
-	    transform.position = player.transform.position + offset;
+		if (player != null)
+		{
+			transform.position = player.transform.position + offset;
+		}
+	    
     }
 }

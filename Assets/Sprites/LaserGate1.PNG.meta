@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 7e964ac99b8cd412a98b0dbe483ae027
-timeCreated: 1518363034
+timeCreated: 1518457475
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: LaserGate1_0
+    21300002: LaserGate1_1
+    21300004: LaserGate1_2
+    21300006: LaserGate1_3
+    21300008: LaserGate1_4
+    21300010: LaserGate1_5
+    21300012: LaserGate1_6
+    21300014: LaserGate1_7
+    21300016: LaserGate1_8
+    21300018: LaserGate1_9
+    21300020: LaserGate1_10
+    21300022: LaserGate1_11
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -31,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -40,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,10 +78,243 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: LaserGate1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 97
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 192
+        width: 97
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 64
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LaserGate1_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -135, y: -73}
+      - {x: -144, y: -73}
+      - {x: -144, y: -128}
+      - {x: -132, y: -128}
+      - {x: -129, y: -125}
+      - {x: -129, y: -83}
+    - - {x: -33, y: -128}
+      - {x: -33, y: -80}
+      - {x: -34, y: -73}
+      - {x: -63, y: -73}
+      - {x: -63, y: -128}
+    - - {x: 33, y: -128}
+      - {x: 63, y: -128}
+      - {x: 63, y: -73}
+      - {x: 37, y: -73}
+      - {x: 33, y: -75}
+    - - {x: 130, y: -73}
+      - {x: 129, y: -84}
+      - {x: 129, y: -125}
+      - {x: 132, y: -128}
+      - {x: 144, y: -128}
+      - {x: 144, y: -73}
+    - - {x: -144, y: -9}
+      - {x: -144, y: -66}
+      - {x: -106, y: -66}
+      - {x: -106, y: -10}
+      - {x: -113, y: -9}
+    - - {x: -68, y: -9}
+      - {x: -86, y: -18}
+      - {x: -86, y: -61}
+      - {x: -83, y: -66}
+      - {x: -10, y: -66}
+      - {x: -10, y: -9}
+    - - {x: 17, y: -9}
+      - {x: 10, y: -10}
+      - {x: 10, y: -65}
+      - {x: 11, y: -66}
+      - {x: 86, y: -66}
+      - {x: 86, y: -9}
+    - - {x: 120, y: -9}
+      - {x: 107, y: -10}
+      - {x: 106, y: -15}
+      - {x: 106, y: -65}
+      - {x: 110, y: -66}
+      - {x: 144, y: -66}
+      - {x: 144, y: -9}
+    - - {x: -144, y: 55}
+      - {x: -144, y: -2}
+      - {x: -139, y: -3}
+      - {x: 144, y: -3}
+      - {x: 144, y: 55}
+    - - {x: -144, y: 119}
+      - {x: -144, y: 62}
+      - {x: 144, y: 62}
+      - {x: 144, y: 119}
     physicsShape: []
   spritePackingTag: 
   userData: 
