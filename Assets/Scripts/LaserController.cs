@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserController : MonoBehaviour {
 
-	public Sprite[] frames;
+	public Sprite[]frames;
 
     public float framesPerSecond = 5;
 
@@ -14,15 +14,17 @@ public class LaserController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-	}
+        StartCoroutine(PlayAnimation());
+    }
 
-	 IEnumerator PlayAnimation()
+    IEnumerator PlayAnimation()
     {
         int currentFrameIndex = 0;
-        while (currentFrameIndex < frames.Length) {
-            spriteRenderer.sprite = frames [currentFrameIndex];
-            yield return new WaitForSeconds(0f / framesPerSecond); // this halts the functions execution for x seconds. Can only be used in coroutines.
+        while (true) {
+            spriteRenderer.sprite = frames [currentFrameIndex % 2];
+            yield return new WaitForSeconds(.02f); // this halts the functions execution for x seconds. Can only be used in coroutines.
             currentFrameIndex++;
         }
     }
@@ -32,7 +34,5 @@ public class LaserController : MonoBehaviour {
 		if (explosionSound != null) {
             AudioSource.PlayClipAtPoint(explosionSound, transform.position);
         }
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine(PlayAnimation());
 	}
 }
