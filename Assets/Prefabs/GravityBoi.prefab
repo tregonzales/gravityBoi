@@ -92,7 +92,7 @@ MonoBehaviour:
   gravBoostSpeed: 7
   antiGravBoostSpeed: 4
   gravScale: 0.5
-  numBoosts: 100
+  numBoosts: 99
 --- !u!212 &212525402352501338
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -64,4 +64,14 @@ public class PlayerController : MonoBehaviour {
 			transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 		}
 	}
+
+	void OnCollisonEnter2D(Collision2D other){
+		Debug.Log("Test");
+		Debug.Log(other.gameObject.tag);
+		if(other.gameObject.CompareTag("Asteroid")){
+			//if the player hits an asteroid
+			Destroy(this.gameObject);
+		}
+	}
+
 }
