@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserController : MonoBehaviour {
 
-	public Sprite[]frames;
+	public Sprite[] frames;
 
     public float framesPerSecond = 5;
 

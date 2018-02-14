@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -8,10 +9,13 @@ public class PlayerController : MonoBehaviour {
 	public float gravBoostSpeed;
 	public float antiGravBoostSpeed;
 	public float gravScale;
-	public float numBoosts;
+	public int numBoosts;
 	private float curSpeed;
+	boostCountController boostCounter;
+	
 	// Use this for initialization
 	void Start () {
+		boostCounter = GameObject.Find("boostCounter").GetComponent<boostCountController>();
 		boi = GetComponent<Rigidbody2D>();
 		curSpeed = antiGravBoostSpeed;
 	}
@@ -43,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 			if (numBoosts != 0) {
 				boi.velocity += curSpeed*direction;
 				numBoosts--;
+				boostCounter.updateCounter(numBoosts);
 			}
 		}
 	}
