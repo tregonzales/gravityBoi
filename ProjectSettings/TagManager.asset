@@ -3,12 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
-  tags: []
-=======
   tags:
+  - Undefined
   - Asteroid
->>>>>>> c36ed384aca90fdfe057eac6d48d579152c22e76
   layers:
   - Default
   - TransparentFX
