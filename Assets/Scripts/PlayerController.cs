@@ -50,6 +50,10 @@ public class PlayerController : MonoBehaviour {
 				boostCounter.updateCounter(numBoosts);
 			}
 		}
+
+		if (Input.GetKeyDown(KeyCode.R)) {
+        	GameManager.instance.RestartTheGameAfterSeconds(0.5f);
+    	}
 	}
 
 	void OrientRobot(Vector2 direction){
