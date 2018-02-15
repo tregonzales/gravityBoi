@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Block
-  - Asteroid
-=======
-  - red1
-  - red2
->>>>>>> 57c4d6a363c07856e001426be5ea0b968eff6531
+  tags: []
   layers:
   - Default
   - TransparentFX

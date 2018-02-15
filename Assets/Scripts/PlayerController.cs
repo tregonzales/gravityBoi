@@ -65,13 +65,11 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void OnCollisonEnter2D(Collision2D other){
-		Debug.Log("Test");
-		Debug.Log(other.gameObject.tag);
-		if(other.gameObject.CompareTag("Asteroid")){
+	void OnCollisionEnter2D(Collision2D coll) {
+		if(coll.gameObject.CompareTag("Asteroid")){
 			//if the player hits an asteroid
 			Destroy(this.gameObject);
 		}
-	}
+    }
 
 }

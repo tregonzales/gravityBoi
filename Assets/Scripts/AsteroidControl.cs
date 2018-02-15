@@ -15,4 +15,5 @@ public class AsteroidControl : MonoBehaviour {
 	}
 
 	//sense collision and destroy if player
+	
 }
