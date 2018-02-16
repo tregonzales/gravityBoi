@@ -8,10 +8,11 @@ public class boostCountController : MonoBehaviour {
 	public Sprite[] frames;
 	private SpriteRenderer onesPlace;
 	private SpriteRenderer tensPlace;
+	private int boosts;
 
 	// Use this for initialization
 	void Start () {
-		var boosts = GameObject.Find("GravityBoi").GetComponent<PlayerController>().numBoosts;
+		boosts = GameObject.Find("GravityBoi").GetComponent<PlayerController>().numBoosts;
 		onesPlace = transform.GetChild(0).GetComponent<SpriteRenderer>();
 		tensPlace = transform.GetChild(1).GetComponent<SpriteRenderer>();
 		updateCounter(boosts);

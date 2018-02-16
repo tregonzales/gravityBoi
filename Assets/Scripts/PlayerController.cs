@@ -12,10 +12,12 @@ public class PlayerController : MonoBehaviour {
 	public int numBoosts;
 	private float curSpeed;
 	boostCountController boostCounter;
+	gravityIndicator gravityIndicator;
 	
 	// Use this for initialization
 	void Start () {
 		boostCounter = GameObject.Find("boostCounter").GetComponent<boostCountController>();
+		gravityIndicator = GameObject.Find("gravityIndicator").GetComponent<gravityIndicator>();
 		boi = GetComponent<Rigidbody2D>();
 		curSpeed = antiGravBoostSpeed;
 	}
@@ -27,13 +29,14 @@ public class PlayerController : MonoBehaviour {
 		//toggle gravity and change the speed of boost depending on current gravity 
 		 if (Input.GetKeyDown(KeyCode.Space)){
 			 if(boi.gravityScale == 0) {
-				 boi.gravityScale =gravScale;
+				 boi.gravityScale = gravScale;
 				 curSpeed = gravBoostSpeed;
 			 }
 			 else {
             	boi.gravityScale = 0;
 				curSpeed = antiGravBoostSpeed;
 			 }
+			 gravityIndicator.updateGravity(boi.gravityScale);
 		 }
 
 		//get the mouse position and use as directional vector to boost
