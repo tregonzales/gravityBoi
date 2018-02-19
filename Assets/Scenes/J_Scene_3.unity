@@ -164,16 +164,6 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.1248398
       objectReference: {fileID: 0}
-    - target: {fileID: 114160746815741376, guid: 15dcee9c465e74e80bd3627585ece822,
-        type: 2}
-      propertyPath: framesPerSecond
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160746815741376, guid: 15dcee9c465e74e80bd3627585ece822,
-        type: 2}
-      propertyPath: degreesPerSecond
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15dcee9c465e74e80bd3627585ece822, type: 2}
   m_IsPrefabParent: 0
@@ -687,6 +677,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1178940663124708, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
     type: 2}
   m_PrefabInternal: {fileID: 1074888262}
+--- !u!114 &620238348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620238342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1571142b69857440bdf8d46e13439a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redGate1: {fileID: 1942645377}
+  redGate2: {fileID: 418474092}
+  yellowGate1: {fileID: 565496326}
+  yellowGate2: {fileID: 1303861343}
 --- !u!1001 &819598483
 Prefab:
   m_ObjectHideFlags: 0
@@ -815,26 +820,68 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114071148335143802, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+    - target: {fileID: 212525402352501338, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
-      propertyPath: redGate1
-      value: 
-      objectReference: {fileID: 1942645377}
-    - target: {fileID: 114071148335143802, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323916810273406, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323916810273406, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323916810273406, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
-      propertyPath: redGate2
-      value: 
-      objectReference: {fileID: 418474092}
-    - target: {fileID: 114071148335143802, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+      propertyPath: gravScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58662998014979522, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
-      propertyPath: yellowGate1
-      value: 
-      objectReference: {fileID: 565496326}
-    - target: {fileID: 114071148335143802, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58662998014979522, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
-      propertyPath: yellowGate2
-      value: 
-      objectReference: {fileID: 1303861343}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58662998014979522, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.10345588
+      objectReference: {fileID: 0}
+    - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: numBoosts
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 58290965091809352, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58290965091809352, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58290965091809352, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.076171175
+      objectReference: {fileID: 0}
+    - target: {fileID: 114642717904449690, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: framesPerSecond
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
   m_IsPrefabParent: 0

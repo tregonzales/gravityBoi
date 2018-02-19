@@ -5,7 +5,7 @@ public class boostController : MonoBehaviour
 {
 
     public Sprite[] frames;
-    public float framesPerSecond = 5;
+    public float framesPerSecond;
     public AudioClip boostSound;
     private SpriteRenderer spriteRenderer;
 
