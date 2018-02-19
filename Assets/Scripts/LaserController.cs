@@ -8,6 +8,8 @@ public class LaserController : MonoBehaviour {
 
     public float framesPerSecond = 5;
 
+    public float degreesPerSecond;
+
     SpriteRenderer spriteRenderer;
 
 	public AudioClip laserSound;
@@ -34,10 +36,13 @@ public class LaserController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (degreesPerSecond != 0) {
+            transform.Rotate(0, 0, degreesPerSecond*Time.deltaTime);
+        }
 	}
 
-	void OnCollisionEnter2D(Collision2D other){
+	void OnTriggerEnter2D(Collider2D other){
 		Destroy(other.gameObject);
+        GameManager.instance.RestartTheGameAfterSeconds(0.5f);
 	}
 }
