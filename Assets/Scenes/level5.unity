@@ -230,7 +230,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4235050558891064, guid: 15dcee9c465e74e80bd3627585ece822, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.13
+      value: 2.481
       objectReference: {fileID: 0}
     - target: {fileID: 4235050558891064, guid: 15dcee9c465e74e80bd3627585ece822, type: 2}
       propertyPath: m_LocalPosition.z
@@ -259,6 +259,10 @@ Prefab:
     - target: {fileID: 1290275558075500, guid: 15dcee9c465e74e80bd3627585ece822, type: 2}
       propertyPath: m_Name
       value: laserPostfull (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4235050558891064, guid: 15dcee9c465e74e80bd3627585ece822, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4.251865
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15dcee9c465e74e80bd3627585ece822, type: 2}
@@ -1669,11 +1673,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4323916810273406, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
       propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
-        type: 2}
-      propertyPath: numBoosts
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []

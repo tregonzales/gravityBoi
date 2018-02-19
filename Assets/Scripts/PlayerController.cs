@@ -12,12 +12,14 @@ public class PlayerController : MonoBehaviour {
 	public int numBoosts;
 	private float curSpeed;
 	boostCountController boostCounter;
+	boostController boostController;
 	gravityIndicator gravityIndicator;
 	
 	// Use this for initialization
 	void Start () {
 		boostCounter = GameObject.Find("boostCounter").GetComponent<boostCountController>();
 		gravityIndicator = GameObject.Find("gravityIndicator").GetComponent<gravityIndicator>();
+		boostController = this.gameObject.transform.GetChild(0).GetComponent<boostController>();
 		boi = GetComponent<Rigidbody2D>();
 		curSpeed = antiGravBoostSpeed;
 	}
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour {
 				boi.velocity += curSpeed*direction;
 				numBoosts--;
 				boostCounter.updateCounter(numBoosts);
+				boostController.playBoost();
 			}
 		}
 
