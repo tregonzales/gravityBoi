@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravBoostSpeed: 7
   antiGravBoostSpeed: 4
-  gravScale: 1
+  gravScale: 0.5
   numBoosts: 3
 --- !u!114 &114642717904449690
 MonoBehaviour:
