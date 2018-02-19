@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212525402352501338}
   - component: {fileID: 50543668583637064}
   - component: {fileID: 114448312221824552}
-  - component: {fileID: 58290965091809352}
   - component: {fileID: 114071148335143802}
+  - component: {fileID: 58681983348087204}
   m_Layer: 0
   m_Name: GravityBoi
   m_TagString: Player
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1178940663124708}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -14.97, y: 7.1, z: 0}
+  m_LocalPosition: {x: 0.61, y: 1.88, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4415738891688032}
@@ -95,7 +95,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58290965091809352
+--- !u!58 &58681983348087204
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -109,7 +109,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.076171175
+  m_Radius: 0.27000007
 --- !u!114 &114071148335143802
 MonoBehaviour:
   m_ObjectHideFlags: 1
