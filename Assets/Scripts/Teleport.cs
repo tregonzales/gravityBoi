@@ -7,6 +7,8 @@ public class Teleport : MonoBehaviour {
 
     public GameObject redGate1;
     public GameObject redGate2;
+    public GameObject yellowGate1;
+    public GameObject yellowGate2;
 
 	// Use this for initialization
 	void Start () {
@@ -28,5 +30,16 @@ public class Teleport : MonoBehaviour {
         {
             transform.position = new Vector2(redGate1.transform.position.x + .25f, redGate1.transform.position.y);
         }
+
+        if (other.CompareTag("yellow1"))
+        {
+            transform.position = new Vector2(yellowGate2.transform.position.x - .25f, yellowGate2.transform.position.y);
+        }
+        else if (other.CompareTag("yellow2"))
+        {
+            transform.position = new Vector2(yellowGate1.transform.position.x + .25f, yellowGate1.transform.position.y);
+        }
+
+
     }
 }

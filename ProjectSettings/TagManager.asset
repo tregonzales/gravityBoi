@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Undefined
   - Asteroid
+  - red1
+  - red2
+  - yellow1
+  - yellow2
   layers:
   - Default
   - TransparentFX
