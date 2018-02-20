@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class gravityIndicator : MonoBehaviour {
 
 
 	public Sprite[] frames;
-	private SpriteRenderer spriteRenderer;
+	private Image img;
 	private float toggle;
 
 	// Use this for initialization
 	void Start () {
-		spriteRenderer = transform.GetComponent<SpriteRenderer>();
+		img = GetComponent<Image>();
 		toggle = GameObject.Find("GravityBoi").GetComponent<Rigidbody2D>().gravityScale;
 		updateGravity(toggle);
 	}
@@ -22,6 +23,6 @@ public class gravityIndicator : MonoBehaviour {
 	}
 
 	public void updateGravity(float toggle) {
-		spriteRenderer.sprite = toggle == 0 ? frames[0] : frames[1];
+		img.sprite = toggle == 0 ? frames[0] : frames[1];
 	}
 }

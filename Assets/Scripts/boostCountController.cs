@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class boostCountController : MonoBehaviour {
 
 
 	public Sprite[] frames;
-	private SpriteRenderer onesPlace;
-	private SpriteRenderer tensPlace;
+	private Image onesPlace;
+	private Image tensPlace;
 	private int boosts;
 
 	// Use this for initialization
 	void Start () {
 		boosts = GameObject.Find("GravityBoi").GetComponent<PlayerController>().numBoosts;
-		onesPlace = transform.GetChild(0).GetComponent<SpriteRenderer>();
-		tensPlace = transform.GetChild(1).GetComponent<SpriteRenderer>();
+		onesPlace = transform.GetChild(0).GetComponent<Image>();
+		tensPlace = transform.GetChild(1).GetComponent<Image>();
 		updateCounter(boosts);
 	}
 	

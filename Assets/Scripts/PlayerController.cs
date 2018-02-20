@@ -13,13 +13,13 @@ public class PlayerController : MonoBehaviour {
 	private float curSpeed;
 	boostCountController boostCounter;
 	boostController boostController;
-	gravityIndicator gravityIndicator;
+	private gravityIndicator gravityIndicator;
 	
 	// Use this for initialization
 	void Start () {
-		boostCounter = GameObject.Find("boostCounter").GetComponent<boostCountController>();
-		gravityIndicator = GameObject.Find("gravityIndicator").GetComponent<gravityIndicator>();
+		boostCounter = GameObject.FindObjectOfType<boostCountController>();
 		boostController = this.gameObject.transform.GetChild(0).GetComponent<boostController>();
+		gravityIndicator = GameObject.FindObjectOfType<gravityIndicator>();
 		boi = GetComponent<Rigidbody2D>();
 		curSpeed = antiGravBoostSpeed;
 	}
