@@ -6,7 +6,7 @@ public class boostController : MonoBehaviour
 
     public Sprite[] frames;
     public float framesPerSecond;
-    public AudioClip boostSound;
+    public AudioSource boostSound;
     private SpriteRenderer spriteRenderer;
 
     void Start()
@@ -16,7 +16,8 @@ public class boostController : MonoBehaviour
 
 	public void playBoost() {
 		 if (boostSound != null) {
-            AudioSource.PlayClipAtPoint(boostSound, transform.position);
+            //AudioSource.PlayClipAtPoint(boostSound, transform.position);
+            boostSound.Play();
         }
 		StartCoroutine(PlayAnimation());
 	}
