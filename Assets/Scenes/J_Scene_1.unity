@@ -671,6 +671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redGate1: {fileID: 436124477}
   redGate2: {fileID: 2114455221}
+  yellowGate1: {fileID: 0}
+  yellowGate2: {fileID: 0}
 --- !u!1 &629698447
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +909,8 @@ Prefab:
       propertyPath: numBoosts
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114071148335143802, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1113363971
