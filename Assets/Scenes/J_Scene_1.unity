@@ -620,7 +620,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4539505800993764, guid: 6ed23f5e2b6eeb24ebd140ea8304db2d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 24.6
+      value: 25.23
       objectReference: {fileID: 0}
     - target: {fileID: 4539505800993764, guid: 6ed23f5e2b6eeb24ebd140ea8304db2d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -673,6 +673,8 @@ MonoBehaviour:
   redGate2: {fileID: 2114455221}
   yellowGate1: {fileID: 0}
   yellowGate2: {fileID: 0}
+  blueGate1: {fileID: 0}
+  blueGate2: {fileID: 0}
 --- !u!1 &629698447
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +924,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4534090286232486, guid: 35fc16c0edf75014ea65efcdf823c8f9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 35.5
+      value: 34.8
       objectReference: {fileID: 0}
     - target: {fileID: 4534090286232486, guid: 35fc16c0edf75014ea65efcdf823c8f9, type: 2}
       propertyPath: m_LocalPosition.y
