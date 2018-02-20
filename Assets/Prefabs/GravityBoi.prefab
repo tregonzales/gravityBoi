@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212525402352501338}
   - component: {fileID: 50543668583637064}
   - component: {fileID: 114448312221824552}
-  - component: {fileID: 114071148335143802}
   - component: {fileID: 58681983348087204}
+  - component: {fileID: 114500902864059876}
   m_Layer: 0
   m_Name: GravityBoi
   m_TagString: Player
@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 4415738891688032}
   - component: {fileID: 212765565993768534}
   - component: {fileID: 114642717904449690}
+  - component: {fileID: 82441915480010396}
   m_Layer: 0
   m_Name: boost
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1178940663124708}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -16.1, y: -22.37, z: 0}
+  m_LocalPosition: {x: 30, y: -20, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4415738891688032}
@@ -110,7 +111,102 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.27000007
---- !u!114 &114071148335143802
+--- !u!82 &82441915480010396
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265145184277750}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b77d61a83b9505e4081e35917253a24d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 1
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114448312221824552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178940663124708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3b3a7cd2683406f8a3bf20bc8150da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravBoostSpeed: 7
+  antiGravBoostSpeed: 4
+  gravScale: 1
+  numBoosts: 3
+--- !u!114 &114500902864059876
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -127,21 +223,6 @@ MonoBehaviour:
   yellowGate2: {fileID: 0}
   blueGate1: {fileID: 0}
   blueGate2: {fileID: 0}
---- !u!114 &114448312221824552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178940663124708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3b3a7cd2683406f8a3bf20bc8150da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gravBoostSpeed: 7
-  antiGravBoostSpeed: 4
-  gravScale: 1
-  numBoosts: 10
 --- !u!114 &114642717904449690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,7 +239,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aaee2a83399c444adb17c37d9026365d, type: 3}
   - {fileID: 21300004, guid: aaee2a83399c444adb17c37d9026365d, type: 3}
   framesPerSecond: 30
-  boostSound: {fileID: 0}
+  boostSound: {fileID: 82964610228893282, guid: b8b97e3e774ae9f42aa6caa6d9d8d54a,
+    type: 2}
 --- !u!212 &212525402352501338
 SpriteRenderer:
   m_ObjectHideFlags: 1

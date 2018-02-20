@@ -6,18 +6,19 @@ public class boostController : MonoBehaviour
 
     public Sprite[] frames;
     public float framesPerSecond;
-    public AudioClip boostSound;
+    public AudioSource boostSound;
     private SpriteRenderer spriteRenderer;
+    private GameObject boi;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        boi = transform.parent.gameObject;
     }
 
 	public void playBoost() {
-		 if (boostSound != null) {
-            AudioSource.PlayClipAtPoint(boostSound, transform.position);
-        }
+        GetComponent<AudioSource>().Play();
+            
 		StartCoroutine(PlayAnimation());
 	}
 
