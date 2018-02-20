@@ -909,7 +909,7 @@ Prefab:
     - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
       propertyPath: numBoosts
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114071148335143802, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}

@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/J_Scene_3.unity
     guid: 823540e830e1c9242889f565b046bcd7
+  - enabled: 1
+    path: Assets/Scenes/J_Scene_4.unity
+    guid: c57b5195764cd954c9526f6bd62514c3
