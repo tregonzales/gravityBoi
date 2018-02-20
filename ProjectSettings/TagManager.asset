@@ -10,6 +10,8 @@ TagManager:
   - red2
   - yellow1
   - yellow2
+  - blue2
+  - blue1
   layers:
   - Default
   - TransparentFX

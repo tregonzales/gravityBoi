@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1178940663124708}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.61, y: 1.88, z: 0}
+  m_LocalPosition: {x: -16.1, y: -22.37, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4415738891688032}
@@ -125,6 +125,8 @@ MonoBehaviour:
   redGate2: {fileID: 0}
   yellowGate1: {fileID: 0}
   yellowGate2: {fileID: 0}
+  blueGate1: {fileID: 0}
+  blueGate2: {fileID: 0}
 --- !u!114 &114448312221824552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,8 +140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravBoostSpeed: 7
   antiGravBoostSpeed: 4
-  gravScale: 0.5
-  numBoosts: 3
+  gravScale: 1
+  numBoosts: 10
 --- !u!114 &114642717904449690
 MonoBehaviour:
   m_ObjectHideFlags: 1
