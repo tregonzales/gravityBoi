@@ -27,39 +27,36 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!GameManager.instance.paused) {
+			//toggle gravity and change the speed of boost depending on current gravity 
+			if (Input.GetKeyDown(KeyCode.Space)){
+				if(boi.gravityScale == 0) {
+					boi.gravityScale = gravScale;
+					curSpeed = gravBoostSpeed;
+				}
+				else {
+					boi.gravityScale = 0;
+					curSpeed = antiGravBoostSpeed;
+				}
+				gravityIndicator.updateGravity(boi.gravityScale);
+			}
 
-		//toggle gravity and change the speed of boost depending on current gravity 
-		 if (Input.GetKeyDown(KeyCode.Space)){
-			 if(boi.gravityScale == 0) {
-				 boi.gravityScale = gravScale;
-				 curSpeed = gravBoostSpeed;
-			 }
-			 else {
-            	boi.gravityScale = 0;
-				curSpeed = antiGravBoostSpeed;
-			 }
-			 gravityIndicator.updateGravity(boi.gravityScale);
-		 }
-
-		//get the mouse position and use as directional vector to boost
-		Vector2 origin = transform.position;
-		Vector2 boost = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-		Vector2 direction = (boost - origin).normalized;
-		OrientRobot(direction);
-		
-		//use the boost with left click, also reduce how many boosts the character has this level
-		if (Input.GetMouseButtonDown(0)) {
-			if (numBoosts != 0) {
-				boi.velocity += curSpeed*direction;
-				numBoosts--;
-				boostCounter.updateCounter(numBoosts);
-				boostController.playBoost();
+			//get the mouse position and use as directional vector to boost
+			Vector2 origin = transform.position;
+			Vector2 boost = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			Vector2 direction = (boost - origin).normalized;
+			OrientRobot(direction);
+			
+			//use the boost with left click, also reduce how many boosts the character has this level
+			if (Input.GetMouseButtonDown(0)) {
+				if (numBoosts != 0) {
+					boi.velocity += curSpeed*direction;
+					numBoosts--;
+					boostCounter.updateCounter(numBoosts);
+					boostController.playBoost();
+				}
 			}
 		}
-
-		if (Input.GetKeyDown(KeyCode.R)) {
-        	GameManager.instance.RestartTheGameAfterSeconds(0.5f);
-    	}
 	}
 
 	void OrientRobot(Vector2 direction){
