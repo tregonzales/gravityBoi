@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour {
 		if(coll.gameObject.CompareTag("Asteroid")){
 			//if the player hits an asteroid
 			Destroy(this.gameObject);
+			GameManager.instance.RestartTheGameAfterSeconds(0.5f);
 		}
     }
 

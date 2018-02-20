@@ -11,7 +11,11 @@ public class Teleport : MonoBehaviour {
     public GameObject yellowGate2;
     public GameObject blueGate1;
     public GameObject blueGate2;
-
+    public GameObject pinkGate1;
+    public GameObject pinkGate2;
+    public GameObject pinkGate3;
+    public GameObject blackGate1;
+    public GameObject blackGate2;
     Rigidbody2D boi;
 
 
@@ -54,6 +58,32 @@ public class Teleport : MonoBehaviour {
         {
             transform.position = new Vector2(blueGate1.transform.position.x, blueGate1.transform.position.y + 1f);
             boi.velocity = -boi.velocity;
+        }
+        if (other.CompareTag("pink1"))
+        {
+            transform.position = new Vector2(pinkGate2.transform.position.x, pinkGate2.transform.position.y + 1f);
+            boi.velocity = -boi.velocity;
+        }
+        else if (other.CompareTag("pink2"))
+        {
+            transform.position = new Vector2(pinkGate3.transform.position.x, pinkGate3.transform.position.y + 1f);
+            //boi.velocity = -boi.velocity;
+        }
+        else if (other.CompareTag("pink3"))
+        {
+            transform.position = new Vector2(pinkGate1.transform.position.x, pinkGate1.transform.position.y + 1f);
+            //boi.velocity = -boi.velocity;
+        }
+        if (other.CompareTag("black1"))
+        {
+            transform.position = new Vector2(blackGate2.transform.position.x - 1f, blackGate2.transform.position.y -1f);
+            //transform.position += new Vector2(-0.125f,-0.125f);
+            //boi.velocity = -boi.velocity;
+        }
+        else if (other.CompareTag("black2"))
+        {
+            transform.position = new Vector2(blackGate1.transform.position.x, blackGate1.transform.position.y + 1f);
+            //boi.velocity = -boi.velocity;
         }
 
 

@@ -43,6 +43,9 @@ public class LaserController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		Destroy(other.gameObject);
-        GameManager.instance.RestartTheGameAfterSeconds(0.5f);
+        if(other.gameObject.tag.Equals("Player")){
+
+            GameManager.instance.RestartTheGameAfterSeconds(0.5f);
+        }
 	}
 }
