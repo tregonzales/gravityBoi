@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 48c32ff3bad364e72973fe5522f03475
-timeCreated: 1518613303
+timeCreated: 1519162618
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -108,9 +108,9 @@ TextureImporter:
       name: gamenumbers_1
       rect:
         serializedVersion: 2
-        x: 19
+        x: 17
         y: 0
-        width: 9
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -152,7 +152,7 @@ TextureImporter:
         serializedVersion: 2
         x: 68
         y: 0
-        width: 15
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
