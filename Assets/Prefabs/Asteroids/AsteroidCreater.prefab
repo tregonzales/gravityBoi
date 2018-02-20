@@ -58,3 +58,9 @@ MonoBehaviour:
   maxSize: 2
   asteroids:
   - {fileID: 1562723705373144, guid: 861db99122cea364b9b8ae15867f7570, type: 2}
+  - {fileID: 1994866325022858, guid: e55fe940af16e1942ada7aecf27a983f, type: 2}
+  - {fileID: 1371596525793196, guid: f03b10fc43551c541a43e0b99124754d, type: 2}
+  - {fileID: 1114413460885762, guid: 8b53e7b74c424114ca49a42cbe89ef80, type: 2}
+  - {fileID: 1535590868514898, guid: 2aa05a81581d5ec468b8ac1546af1e6c, type: 2}
+  - {fileID: 1798023646019086, guid: 042e957a8d18a304aa248d97602bacfd, type: 2}
+  - {fileID: 1601890095981288, guid: 1b2f8d3fcca033046a1e3a38280d3da1, type: 2}
