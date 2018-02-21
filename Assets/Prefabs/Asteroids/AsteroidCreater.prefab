@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1309422049717970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.41, y: -3.8, z: -0.096106686}
+  m_LocalPosition: {x: -40, y: 0.4, z: -0.096106686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,14 +51,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c400889ff2a3aa9499b08cf322ee2ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numAsteroids: 4
+  numAsteroids: 10
   maxXVelocity: 4
   maxYVelocity: 4
   minSize: 1
   maxSize: 2
   asteroids:
   - {fileID: 1562723705373144, guid: 861db99122cea364b9b8ae15867f7570, type: 2}
-  - {fileID: 1994866325022858, guid: e55fe940af16e1942ada7aecf27a983f, type: 2}
+  - {fileID: 1994866325022858, guid: 078cfd3ba4dc12b4694915a4ce25abce, type: 2}
   - {fileID: 1371596525793196, guid: f03b10fc43551c541a43e0b99124754d, type: 2}
   - {fileID: 1114413460885762, guid: 8b53e7b74c424114ca49a42cbe89ef80, type: 2}
   - {fileID: 1535590868514898, guid: 2aa05a81581d5ec468b8ac1546af1e6c, type: 2}

@@ -9,6 +9,12 @@ public class LaserController : MonoBehaviour {
     public float framesPerSecond = 5;
 
     public float degreesPerSecond;
+    public float moveXSpeed;
+    public float moveYSpeed;
+    public float leftXLimit;
+    public float rightXLimit;
+    public float upperYLimit;
+    public float lowerYLimit;
 
     SpriteRenderer spriteRenderer;
 
@@ -39,6 +45,7 @@ public class LaserController : MonoBehaviour {
         if (degreesPerSecond != 0) {
             transform.Rotate(0, 0, degreesPerSecond*Time.deltaTime);
         }
+        Move();
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -48,4 +55,23 @@ public class LaserController : MonoBehaviour {
             GameManager.instance.RestartTheGameAfterSeconds(0.5f);
         }
 	}
+
+    void Move(){
+        if(moveXSpeed == 0 && moveYSpeed == 0){
+            return;
+        }
+        transform.position += new Vector3(moveXSpeed*Time.deltaTime,moveYSpeed*Time.deltaTime,0);
+        if(moveXSpeed != 0){
+            if(transform.position.x <= leftXLimit)
+                moveXSpeed = moveXSpeed * -1;
+            if(transform.position.x >= rightXLimit)
+               moveXSpeed = moveXSpeed * -1;
+        }
+        if(moveYSpeed != 0){
+            if(transform.position.y <= lowerYLimit)
+                moveYSpeed = moveYSpeed * -1;
+            if(transform.position.y >= upperYLimit)
+                moveYSpeed = moveYSpeed * -1;
+        }
+    }
 }
