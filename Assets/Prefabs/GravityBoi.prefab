@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50543668583637064}
   - component: {fileID: 114448312221824552}
   - component: {fileID: 58681983348087204}
-  - component: {fileID: 114500902864059876}
   m_Layer: 0
   m_Name: GravityBoi
   m_TagString: Player
@@ -206,23 +205,6 @@ MonoBehaviour:
   antiGravBoostSpeed: 4
   gravScale: 1
   numBoosts: 3
---- !u!114 &114500902864059876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178940663124708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1571142b69857440bdf8d46e13439a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redGate1: {fileID: 0}
-  redGate2: {fileID: 0}
-  yellowGate1: {fileID: 0}
-  yellowGate2: {fileID: 0}
-  blueGate1: {fileID: 0}
-  blueGate2: {fileID: 0}
 --- !u!114 &114642717904449690
 MonoBehaviour:
   m_ObjectHideFlags: 1

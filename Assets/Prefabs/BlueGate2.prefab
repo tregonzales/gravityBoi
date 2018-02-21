@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4092681646096256}
   - component: {fileID: 212106643220463368}
   - component: {fileID: 61670002295005564}
+  - component: {fileID: 114015020147511894}
   m_Layer: 0
   m_Name: BlueGate2
   m_TagString: blue2
@@ -66,6 +67,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.043227106}
   m_EdgeRadius: 0
+--- !u!114 &114015020147511894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351537469415334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b558dffc36bcb8c44bc3ceacc6727751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetGate: {fileID: 0}
+  orientation: 
+  boi: {fileID: 0}
 --- !u!212 &212106643220463368
 SpriteRenderer:
   m_ObjectHideFlags: 1

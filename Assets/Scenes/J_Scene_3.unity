@@ -951,6 +951,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114843398389489730, guid: d44e309aba091bf41865852205927573,
+        type: 2}
+      propertyPath: targetGate
+      value: 
+      objectReference: {fileID: 83044512}
+    - target: {fileID: 114843398389489730, guid: d44e309aba091bf41865852205927573,
+        type: 2}
+      propertyPath: orientation
+      value: up
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843398389489730, guid: d44e309aba091bf41865852205927573,
+        type: 2}
+      propertyPath: boi
+      value: 
+      objectReference: {fileID: 620238342}
+    - target: {fileID: 114843398389489730, guid: d44e309aba091bf41865852205927573,
+        type: 2}
+      propertyPath: targetOrientation
+      value: up
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d44e309aba091bf41865852205927573, type: 2}
   m_IsPrefabParent: 0
@@ -1794,6 +1814,26 @@ Prefab:
     - target: {fileID: 4092681646096256, guid: ce933ac74ab77334caccb630eddca036, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114015020147511894, guid: ce933ac74ab77334caccb630eddca036,
+        type: 2}
+      propertyPath: targetGate
+      value: 
+      objectReference: {fileID: 96854190}
+    - target: {fileID: 114015020147511894, guid: ce933ac74ab77334caccb630eddca036,
+        type: 2}
+      propertyPath: orientation
+      value: up
+      objectReference: {fileID: 0}
+    - target: {fileID: 114015020147511894, guid: ce933ac74ab77334caccb630eddca036,
+        type: 2}
+      propertyPath: boi
+      value: 
+      objectReference: {fileID: 620238342}
+    - target: {fileID: 114015020147511894, guid: ce933ac74ab77334caccb630eddca036,
+        type: 2}
+      propertyPath: targetOrientation
+      value: up
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce933ac74ab77334caccb630eddca036, type: 2}
@@ -2780,13 +2820,23 @@ Prefab:
     - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
       propertyPath: numBoosts
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114642717904449690, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
       propertyPath: boostSound
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114500902864059876, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: blueGate2
+      value: 
+      objectReference: {fileID: 83044512}
+    - target: {fileID: 114500902864059876, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: blueGate1
+      value: 
+      objectReference: {fileID: 96854190}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
   m_IsPrefabParent: 0
