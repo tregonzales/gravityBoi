@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour {
 		StartCoroutine (LoadSceneAfterSeconds (seconds, sceneName));
 	}
 
+	public void LoadSceneByIndex(int i){
+		SceneManager.LoadScene(i);
+	}
+
 	public void LoadMainMenu() {
 		SceneManager.LoadScene("MainMenu");
 	}
