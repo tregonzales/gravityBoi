@@ -9,14 +9,17 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	public GameObject pauseMenu;
 	public bool paused;
+	public bool mainMenu;
 
 	void Awake(){
 		instance = this;
 		//create the pause menu interaction and start it inactive
-		pauseMenu = GameObject.Find("pauseMenu");
-		paused = false;
-		Time.timeScale = 1.0f;
-		pauseMenu.SetActive(paused);
+		if (!mainMenu) {
+			pauseMenu = GameObject.Find("pauseMenu");
+			paused = false;
+			Time.timeScale = 1.0f;
+			pauseMenu.SetActive(paused);
+		}
 	}
 
 	public void RestartTheGameAfterSeconds(float seconds){
@@ -46,11 +49,11 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update() {
-		if (Input.GetKeyDown(KeyCode.Escape)) {
+		if (Input.GetKeyDown(KeyCode.Escape) && !mainMenu) {
 			TogglePauseMenu();
 		}
 		
-		if (Input.GetKeyDown(KeyCode.R)) {
+		if (Input.GetKeyDown(KeyCode.R) && !mainMenu) {
         	RestartTheGameAfterSeconds(0.5f);
     	}
 	}
