@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 
 	void Awake(){
 		instance = this;
+		//create the pause menu interaction and start it inactive
 		pauseMenu = GameObject.Find("pauseMenu");
 		paused = false;
 		Time.timeScale = 1.0f;

@@ -9,6 +9,7 @@ public class CamControl2 : MonoBehaviour
 
     public float boxHeight;         //Public variable for height of camera box
     public float boxWidth;          //Public variable for width of camera box
+    public float zoomSize;         //how large to start the camera
 
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
@@ -55,15 +56,13 @@ public class CamControl2 : MonoBehaviour
 
     IEnumerator zoomIn()
     {
-        float cameraField = 15;
-        Camera.main.orthographicSize = cameraField;
+        Camera.main.orthographicSize = zoomSize;
         yield return new WaitForSeconds(3f);
-
-        while (cameraField >= 10)
+        while (zoomSize >= 10)
         {
-            Camera.main.orthographicSize = cameraField;
+            Camera.main.orthographicSize = zoomSize;
             yield return new WaitForSeconds(.01f);
-            cameraField -= .1f;
+            zoomSize -= .5f;
         }
 
     }

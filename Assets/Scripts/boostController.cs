@@ -4,8 +4,8 @@ using System.Collections;
 public class boostController : MonoBehaviour
 {
 
-    public Sprite[] frames;
-    public float framesPerSecond;
+    public Sprite[] frames; //boost frames
+    public float framesPerSecond; //how fast
     public AudioSource boostSound;
     private SpriteRenderer spriteRenderer;
 
@@ -22,6 +22,7 @@ public class boostController : MonoBehaviour
 
     IEnumerator PlayAnimation()
     {
+        //iterate through frames to get that fire animation
         int currentFrameIndex = 0;
         while (currentFrameIndex < frames.Length) {
             spriteRenderer.sprite = frames [currentFrameIndex];
