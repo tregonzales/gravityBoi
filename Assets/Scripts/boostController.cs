@@ -12,10 +12,11 @@ public class boostController : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        boostSound = GetComponent<AudioSource>();
     }
 
 	public void playBoost() {
-        GetComponent<AudioSource>().Play();
+        boostSound.Play();
             
 		StartCoroutine(PlayAnimation());
 	}

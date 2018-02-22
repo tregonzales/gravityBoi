@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class gateController : MonoBehaviour {
 
+	private AudioSource gateSound;
+	private bool played;
 	// Use this for initialization
 	void Start () {
-		
+		played = false;
+		gateSound = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +19,10 @@ public class gateController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.CompareTag("Player")) {
+			if (!played) {
+				gateSound.Play();
+				played = true;
+			}
 			GameManager.instance.LoadNextScene(.5f);
 		}
 	}
