@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 	public int numBoosts;
 	private float curSpeed;
 	public Sprite broke;
+	private AudioSource laserDeath;
 	SpriteRenderer spriteRenderer;
 	boostCountController boostCounter;
 	boostController boostController;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour {
 		boostController = this.gameObject.transform.GetChild(0).GetComponent<boostController>();
 		gravityIndicator = GameObject.FindObjectOfType<gravityIndicator>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
+		laserDeath = GetComponent<AudioSource>();
 		boi = GetComponent<Rigidbody2D>();
 		curSpeed = antiGravBoostSpeed;
 	}
@@ -77,6 +79,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void dieLaser() {
 		spriteRenderer.sprite = broke;
+		laserDeath.Play();
 		boi.gravityScale = 1;
 		GameManager.instance.RestartTheGameAfterSeconds(2f);
 	}
