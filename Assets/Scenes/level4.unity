@@ -2848,6 +2848,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cf9894207b1947a69a1c0f4bdafc0e5, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1277384616 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114478700432435932, guid: 6cf9894207b1947a69a1c0f4bdafc0e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1277384615}
+  m_Script: {fileID: 11500000, guid: 6a6f55073f9174f0ab333d1087ae6276, type: 3}
 --- !u!4 &1280523683 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4155962802013032, guid: 63010f6144c904e48930fa8647629515,
@@ -3356,6 +3362,31 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0.29992676
+      objectReference: {fileID: 0}
+    - target: {fileID: 114641141597652388, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1277384616}
+    - target: {fileID: 114641141597652388, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1277384616}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartTheGameAfterSeconds
+      objectReference: {fileID: 0}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a5267d08bac44aa927b54884c5dbb0, type: 2}

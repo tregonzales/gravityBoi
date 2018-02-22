@@ -18,8 +18,6 @@ public class LaserController : MonoBehaviour {
 
     SpriteRenderer spriteRenderer;
 
-	public AudioClip laserSound;
-
 	// Use this for initialization
 	void Start () {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -33,9 +31,6 @@ public class LaserController : MonoBehaviour {
         while (true) {
             spriteRenderer.sprite = frames [currentFrameIndex % 2];
             yield return new WaitForSeconds(.05f); // this halts the functions execution for x seconds. Can only be used in coroutines.
-            if (laserSound != null) {
-            AudioSource.PlayClipAtPoint(laserSound, transform.position);
-        	}
 			currentFrameIndex++;
         }
     }

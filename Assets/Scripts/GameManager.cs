@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void RestartTheGameAfterSeconds(float seconds){
+		Time.timeScale = 1.0f;
 		StartCoroutine (LoadSceneAfterSeconds (seconds, SceneManager.GetActiveScene ().name));
 	}
 
