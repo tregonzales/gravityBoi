@@ -10,6 +10,7 @@ public class CamControl2 : MonoBehaviour
     public float boxHeight;         //Public variable for height of camera box
     public float boxWidth;          //Public variable for width of camera box
     public float zoomSize;         //how large to start the camera
+    Vector3 gravBoiPoint;
 
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
@@ -18,6 +19,7 @@ public class CamControl2 : MonoBehaviour
     {
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+        // gravBoiPoint = new Vector3(player.transform.position.x, player.transform.position.y, -10);
 
         StartCoroutine(zoomIn());
     }
@@ -57,9 +59,11 @@ public class CamControl2 : MonoBehaviour
     IEnumerator zoomIn()
     {
         Camera.main.orthographicSize = zoomSize;
+       
         yield return new WaitForSeconds(3f);
         while (zoomSize >= 10)
         {
+            // transform.position = Vector3.MoveTowards(transform.position, gravBoiPoint, .5f);
             Camera.main.orthographicSize = zoomSize;
             yield return new WaitForSeconds(.01f);
             zoomSize -= .5f;
