@@ -8,12 +8,10 @@ public class boostController : MonoBehaviour
     public float framesPerSecond;
     public AudioSource boostSound;
     private SpriteRenderer spriteRenderer;
-    private GameObject boi;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        boi = transform.parent.gameObject;
     }
 
 	public void playBoost() {
