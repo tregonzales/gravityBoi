@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamControl2 : MonoBehaviour {
+public class CamControl2 : MonoBehaviour
+{
 
     public GameObject player;       //Public variable to store a reference to the player game object
 
@@ -16,6 +17,8 @@ public class CamControl2 : MonoBehaviour {
     {
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+
+        StartCoroutine(zoomIn());
     }
 
     // LateUpdate is called after Update each frame
@@ -23,7 +26,7 @@ public class CamControl2 : MonoBehaviour {
     {
 
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        if (player != null && boxWidth < Mathf.Abs(transform.position.x - player.transform.position.x)) 
+        if (player != null && boxWidth < Mathf.Abs(transform.position.x - player.transform.position.x))
         {
             if (player.transform.position.x > transform.position.x)
             {
@@ -35,7 +38,7 @@ public class CamControl2 : MonoBehaviour {
             }
         }
 
-        if (player != null&& boxHeight < Mathf.Abs(transform.position.y - player.transform.position.y))
+        if (player != null && boxHeight < Mathf.Abs(transform.position.y - player.transform.position.y))
         {
             if (player.transform.position.y > transform.position.y)
             {
@@ -49,4 +52,20 @@ public class CamControl2 : MonoBehaviour {
 
 
     }
+
+    IEnumerator zoomIn()
+    {
+        float cameraField = 15;
+        Camera.main.orthographicSize = cameraField;
+        yield return new WaitForSeconds(3f);
+
+        while (cameraField >= 10)
+        {
+            Camera.main.orthographicSize = cameraField;
+            yield return new WaitForSeconds(.01f);
+            cameraField -= .1f;
+        }
+
+    }
+
 }
