@@ -19,6 +19,8 @@ public class CamControl2 : MonoBehaviour
 
     private bool startUpdate;
 
+    private PlayerController controller;
+
     // Use this for initialization
     void Start()
     {
@@ -26,9 +28,11 @@ public class CamControl2 : MonoBehaviour
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         gravBoiPoint = new Vector3(player.transform.position.x, player.transform.position.y, -10);
 
-        startUpdate = false;
-        StartCoroutine(zoomIn());
+        controller = player.GetComponent<PlayerController>();
 
+        startUpdate = false;
+
+        StartCoroutine(zoomIn());
     }
 
     // LateUpdate is called after Update each frame
@@ -65,9 +69,11 @@ public class CamControl2 : MonoBehaviour
 
     IEnumerator zoomIn()
     {
+
         Camera.main.orthographicSize = zoomSize;
         Camera.main.transform.position = new Vector3(xCenter, yCenter, -10);
-        yield return new WaitForSeconds(3f);
+
+        yield return new WaitForSeconds(1.5f);
         while (zoomSize >= 10)
         {
             Camera.main.transform.position = Vector3.MoveTowards(transform.position, gravBoiPoint, .5f);
@@ -80,8 +86,11 @@ public class CamControl2 : MonoBehaviour
             Camera.main.transform.position = Vector3.MoveTowards(transform.position, gravBoiPoint, .5f);
             yield return new WaitForSeconds(.01f);
         }
+        if (startUpdate == false)
+        {
+            controller.startUpdating();
+        }
         startUpdate = true;
-
     }
 
 }

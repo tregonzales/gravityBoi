@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour {
 	boostCountController boostCounter;
 	boostController boostController;
 	private gravityIndicator gravityIndicator;
+
+    private bool startUpdate;
 	
 	// Use this for initialization
 	void Start () {
@@ -32,7 +34,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!GameManager.instance.paused) {
+
+
+		if (!GameManager.instance.paused && startUpdate) {
 			//toggle gravity and change the speed of boost depending on current gravity 
 			if (Input.GetKeyDown(KeyCode.Space)){
 				if(boi.gravityScale == 0) {
@@ -90,6 +94,11 @@ public class PlayerController : MonoBehaviour {
 			Destroy(this.gameObject);
 			GameManager.instance.RestartTheGameAfterSeconds(0.5f);
 		}
+    }
+
+    public void startUpdating()
+    {
+        startUpdate = true;
     }
 
 }
