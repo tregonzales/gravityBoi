@@ -607,6 +607,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: startPosition.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4732788383717336, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_LocalPosition.x
       value: 21.41
@@ -641,8 +646,38 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
-      propertyPath: numAsteroids
-      value: 4
+      propertyPath: startPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: AsteroidVelo.Array.data[0].x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: AsteroidVelo.Array.data[0].y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: AsteroidVelo.Array.data[1].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: AsteroidVelo.Array.data[1].y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: AsteroidVelo.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: AsteroidVelo.Array.data[2].y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
