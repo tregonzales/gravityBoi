@@ -48,6 +48,12 @@ public class LaserController : MonoBehaviour {
         Move();
 	}
 
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag.Equals("Player")){
+            other.gameObject.GetComponent<PlayerController>().dieLaser();
+        }
+    }
+
     void Move(){
         if(moveXSpeed == 0 && moveYSpeed == 0){
             return;

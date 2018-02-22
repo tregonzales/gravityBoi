@@ -90,9 +90,6 @@ public class PlayerController : MonoBehaviour {
 			Destroy(this.gameObject);
 			GameManager.instance.RestartTheGameAfterSeconds(0.5f);
 		}
-		else if (coll.gameObject.CompareTag("laser")) {
-			dieLaser();
-		}
     }
 
 }
