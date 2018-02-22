@@ -18,6 +18,7 @@ TagManager:
   - pink3
   - black1
   - black2
+  - laser
   layers:
   - Default
   - TransparentFX

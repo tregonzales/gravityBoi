@@ -205,6 +205,7 @@ MonoBehaviour:
   antiGravBoostSpeed: 4
   gravScale: 0.5
   numBoosts: 3
+  broke: {fileID: 21300000, guid: 8d5071de4b44449df8e2becee439f407, type: 3}
 --- !u!114 &114642717904449690
 MonoBehaviour:
   m_ObjectHideFlags: 1

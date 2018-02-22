@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
 	public float gravScale;
 	public int numBoosts;
 	private float curSpeed;
+	public Sprite broke;
+	SpriteRenderer spriteRenderer;
 	boostCountController boostCounter;
 	boostController boostController;
 	private gravityIndicator gravityIndicator;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour {
 		boostCounter = GameObject.FindObjectOfType<boostCountController>();
 		boostController = this.gameObject.transform.GetChild(0).GetComponent<boostController>();
 		gravityIndicator = GameObject.FindObjectOfType<gravityIndicator>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 		boi = GetComponent<Rigidbody2D>();
 		curSpeed = antiGravBoostSpeed;
 	}
@@ -72,11 +75,20 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	public void dieLaser() {
+		spriteRenderer.sprite = broke;
+		boi.gravityScale = 1;
+		GameManager.instance.RestartTheGameAfterSeconds(2f);
+	}
+
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll.gameObject.CompareTag("Asteroid")){
 			//if the player hits an asteroid
 			Destroy(this.gameObject);
 			GameManager.instance.RestartTheGameAfterSeconds(0.5f);
+		}
+		else if (coll.gameObject.CompareTag("laser")) {
+			dieLaser();
 		}
     }
 

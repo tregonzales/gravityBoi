@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 61070398432496282}
   m_Layer: 0
   m_Name: laserPostfull
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,6 +135,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bf549c0b44ffa4192b3651d354b1a825, type: 3}
   framesPerSecond: 5
   degreesPerSecond: 0
+  moveXSpeed: 0
+  moveYSpeed: 0
+  leftXLimit: 0
+  rightXLimit: 0
+  upperYLimit: 0
+  lowerYLimit: 0
   laserSound: {fileID: 0}
 --- !u!212 &212868991255704474
 SpriteRenderer:
