@@ -12,14 +12,15 @@ public class AsteroidGenerator : MonoBehaviour {
 
 	void Start () {
        	///* 
-		System.Random rand = new System.Random();
+		//UnityEngine.Random rand = new UnityEngine.Random();
 		for(int i = 0; i < AsteroidVelo.Length; i++){
+			//Debug.Log(Time.time);
             //Random number to select asteroid
-			int r = (int)rand.Next(0,possibleAsteroids.Length);
+			int r = (int)UnityEngine.Random.Range(0.0f,(float)possibleAsteroids.Length);
 			//instantiate
 			GameObject o = (GameObject)Instantiate(possibleAsteroids[r]);
 			//randomly scale x any y evenly
-			double size = rand.NextDouble()*(maxSize-minSize) + minSize;
+			double size = (double)UnityEngine.Random.Range(0.0f,1.0f)*(maxSize-minSize) + minSize;
 			
 			o.transform.position = new Vector3(transform.position.x + AsteroidVelo[i].x,transform.position.y + AsteroidVelo[i].y,transform.position.z);
 
