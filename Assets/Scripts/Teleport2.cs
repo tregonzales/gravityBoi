@@ -21,6 +21,9 @@ public class Teleport2 : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(!other.gameObject.tag.Equals("Player")){
+            return;
+        }
         boi.transform.position = new Vector2(targetGate.transform.position.x, targetGate.transform.position.y);
 
         if (targetOrientation == "up")

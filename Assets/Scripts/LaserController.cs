@@ -5,9 +5,7 @@ using UnityEngine;
 public class LaserController : MonoBehaviour {
 
 	public Sprite[] frames;
-
     public float framesPerSecond = 5;
-
     public float degreesPerSecond;
     public float moveXSpeed;
     public float moveYSpeed;
@@ -16,12 +14,12 @@ public class LaserController : MonoBehaviour {
     public float upperYLimit;
     public float lowerYLimit;
 
+    private bool startUpdating = false;
     SpriteRenderer spriteRenderer;
 
 	// Use this for initialization
 	void Start () {
         spriteRenderer = GetComponent<SpriteRenderer>();
-
         StartCoroutine(PlayAnimation());
     }
 
@@ -47,9 +45,18 @@ public class LaserController : MonoBehaviour {
         if(other.gameObject.tag.Equals("Player")){
             other.gameObject.GetComponent<PlayerController>().dieLaser();
         }
+        if(other.gameObject.tag.Equals("Asteroid")){
+            other.gameObject.GetComponent<AsteroidControl>().destroyAsteroidByLaser();
+        }
     }
 
+    public void startMovement(){
+        startUpdating = true;
+    }
     void Move(){
+        if(!startUpdating){
+            return;
+        }
         if(moveXSpeed == 0 && moveYSpeed == 0){
             return;
         }

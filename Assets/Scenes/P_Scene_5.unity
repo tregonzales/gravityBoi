@@ -609,7 +609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4899576345930602, guid: b3bc1e5f84ba14ea08e9b37d359d149c, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1343063038099788, guid: b3bc1e5f84ba14ea08e9b37d359d149c, type: 2}
       propertyPath: m_Name
@@ -1326,6 +1326,11 @@ Prefab:
       propertyPath: zoomSize
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114409044073709728, guid: 2e25651a8eb8d43e3bec52768c1e4ff3,
+        type: 2}
+      propertyPath: laserMove
+      value: 
+      objectReference: {fileID: 1842022037}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e25651a8eb8d43e3bec52768c1e4ff3, type: 2}
   m_IsPrefabParent: 0
@@ -1678,7 +1683,7 @@ Transform:
   - {fileID: 240855486}
   - {fileID: 105291429}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191901826
 GameObject:
@@ -2008,8 +2013,13 @@ Prefab:
     - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
         type: 2}
       propertyPath: numBoosts
-      value: 15
+      value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: asteroidDeath
+      value: 
+      objectReference: {fileID: 8300000, guid: 93c9656116b40394390d89a9da970023, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
   m_IsPrefabParent: 0
@@ -2059,6 +2069,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3bc1e5f84ba14ea08e9b37d359d149c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1842022037 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1290275558075500, guid: 15dcee9c465e74e80bd3627585ece822,
+    type: 2}
+  m_PrefabInternal: {fileID: 1879057650}
 --- !u!1001 &1879057650
 Prefab:
   m_ObjectHideFlags: 0

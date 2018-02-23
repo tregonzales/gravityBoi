@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 	public int numBoosts;
 	private float curSpeed;
 	public Sprite broke;
+	public AudioClip asteroidDeath;
 	private AudioSource laserDeath;
 	SpriteRenderer spriteRenderer;
 	boostCountController boostCounter;
@@ -88,11 +89,14 @@ public class PlayerController : MonoBehaviour {
 		GameManager.instance.RestartTheGameAfterSeconds(2f);
 	}
 
+
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll.gameObject.CompareTag("Asteroid")){
 			//if the player hits an asteroid
-			Destroy(this.gameObject);
-			GameManager.instance.RestartTheGameAfterSeconds(0.5f);
+			spriteRenderer.sprite = broke;
+			laserDeath.PlayOneShot(asteroidDeath,1.0f);
+			boi.gravityScale = 1;
+			GameManager.instance.RestartTheGameAfterSeconds(2f);
 		}
     }
 

@@ -17,7 +17,6 @@ public class AsteroidGenerator : MonoBehaviour {
             //Random number to select asteroid
 			int r = (int)rand.Next(0,possibleAsteroids.Length);
 			//instantiate
-			Debug.Log(r);
 			GameObject o = (GameObject)Instantiate(possibleAsteroids[r]);
 			//randomly scale x any y evenly
 			double size = rand.NextDouble()*(maxSize-minSize) + minSize;

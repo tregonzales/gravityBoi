@@ -843,11 +843,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4671190966648830, guid: 2e25651a8eb8d43e3bec52768c1e4ff3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 20.93
       objectReference: {fileID: 0}
     - target: {fileID: 4671190966648830, guid: 2e25651a8eb8d43e3bec52768c1e4ff3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -14.99
       objectReference: {fileID: 0}
     - target: {fileID: 4671190966648830, guid: 2e25651a8eb8d43e3bec52768c1e4ff3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1390,6 +1390,16 @@ Prefab:
     - target: {fileID: 1309422049717970, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_Name
       value: AsteroidCreater (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
@@ -2383,26 +2393,36 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[0].x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[0].y
-      value: -1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[1].x
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[1].y
-      value: 10
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1309422049717970, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_Name
       value: AsteroidCreater (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
@@ -4436,7 +4456,7 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[0].y
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
@@ -4446,7 +4466,7 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[1].y
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1309422049717970, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_Name
@@ -4455,12 +4475,12 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: minSize
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: maxSize
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
@@ -4738,21 +4758,31 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[0].y
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[1].x
-      value: -2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[1].y
-      value: 1.2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1309422049717970, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_Name
       value: AsteroidCreater (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
@@ -8853,6 +8883,16 @@ Prefab:
       propertyPath: AsteroidVelo.Array.data[1].y
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
   m_IsPrefabParent: 0
@@ -11085,6 +11125,16 @@ Prefab:
       propertyPath: m_Name
       value: AsteroidCreater (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
   m_IsPrefabParent: 0
@@ -11647,6 +11697,11 @@ Prefab:
       propertyPath: numBoosts
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114448312221824552, guid: 8ccd592770a9c48aeb369dc278e1c2a9,
+        type: 2}
+      propertyPath: asteroidDeath
+      value: 
+      objectReference: {fileID: 8300000, guid: 93c9656116b40394390d89a9da970023, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ccd592770a9c48aeb369dc278e1c2a9, type: 2}
   m_IsPrefabParent: 0
@@ -13399,7 +13454,7 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4732788383717336, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_LocalPosition.x
@@ -13451,12 +13506,12 @@ Prefab:
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[0].x
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
       propertyPath: AsteroidVelo.Array.data[0].y
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
         type: 2}
@@ -13481,6 +13536,16 @@ Prefab:
         type: 2}
       propertyPath: AsteroidVelo.Array.data[3].y
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
@@ -14185,6 +14250,16 @@ Prefab:
     - target: {fileID: 1309422049717970, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
       propertyPath: m_Name
       value: AsteroidCreater (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517636143208116, guid: eb1ab760f6494e848b09ed0122384480,
+        type: 2}
+      propertyPath: maxSize
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb1ab760f6494e848b09ed0122384480, type: 2}
