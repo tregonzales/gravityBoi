@@ -18,7 +18,7 @@ public class gateController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.CompareTag("Player")) {
+		if (other.gameObject.CompareTag("Player") && other.GetComponent<SpriteRenderer>().name == "character") {
 			if (!played) {
 				gateSound.Play();
 				played = true;
