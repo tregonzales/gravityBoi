@@ -394,6 +394,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4155962802013032, guid: 63010f6144c904e48930fa8647629515,
     type: 2}
   m_PrefabInternal: {fileID: 1117569593}
+--- !u!114 &139999658 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114478700432435932, guid: 6cf9894207b1947a69a1c0f4bdafc0e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1471037446}
+  m_Script: {fileID: 11500000, guid: 6a6f55073f9174f0ab333d1087ae6276, type: 3}
 --- !u!1001 &157314912
 Prefab:
   m_ObjectHideFlags: 0
@@ -2781,7 +2787,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4769138894635984, guid: 6cf9894207b1947a69a1c0f4bdafc0e5, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cf9894207b1947a69a1c0f4bdafc0e5, type: 2}
@@ -3395,7 +3401,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4699082133206000, guid: 931388f265b586348aba41d4412978ae, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 931388f265b586348aba41d4412978ae, type: 2}
@@ -3546,6 +3552,26 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114641141597652388, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 139999658}
+    - target: {fileID: 114641141597652388, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 139999658}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartTheGameAfterSeconds
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a5267d08bac44aa927b54884c5dbb0, type: 2}

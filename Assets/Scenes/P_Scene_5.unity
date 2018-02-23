@@ -1489,6 +1489,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114641141597652388, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1783090912}
+    - target: {fileID: 114641141597652388, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1783090912}
+    - target: {fileID: 114019710374789362, guid: e9a5267d08bac44aa927b54884c5dbb0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartTheGameAfterSeconds
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a5267d08bac44aa927b54884c5dbb0, type: 2}
   m_IsPrefabParent: 0
@@ -2069,6 +2089,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3bc1e5f84ba14ea08e9b37d359d149c, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1783090912 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114478700432435932, guid: 6cf9894207b1947a69a1c0f4bdafc0e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 755031645}
+  m_Script: {fileID: 11500000, guid: 6a6f55073f9174f0ab333d1087ae6276, type: 3}
 --- !u!1 &1842022037 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1290275558075500, guid: 15dcee9c465e74e80bd3627585ece822,
