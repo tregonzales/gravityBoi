@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 	boostCountController boostCounter;
 	boostController boostController;
 	private gravityIndicator gravityIndicator;
+    private bool isDead = false;
 
     private bool startUpdate;
 	
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 
 
-		if (!GameManager.instance.paused && startUpdate) {
+		if (!GameManager.instance.paused && startUpdate && isDead == false) {
 			//toggle gravity and change the speed of boost depending on current gravity 
 			if (Input.GetKeyDown(KeyCode.Space)){
 				if(boi.gravityScale == 0) {
@@ -83,6 +84,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void dieLaser() {
+        isDead = true;
 		spriteRenderer.sprite = broke;
 		laserDeath.Play();
 		boi.gravityScale = 1;
@@ -92,6 +94,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll.gameObject.CompareTag("Asteroid")){
+            isDead = true;
 			//if the player hits an asteroid
 			spriteRenderer.sprite = broke;
 			laserDeath.PlayOneShot(asteroidDeath,1.0f);
