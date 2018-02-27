@@ -6,7 +6,7 @@ public class CamControl2 : MonoBehaviour
 {
 
     public GameObject player;       //Public variable to store a reference to the player game object
-    public GameObject laserMove;
+    public GameObject[] laserMove;
     public float boxHeight;         //Public variable for height of camera box
     public float boxWidth;          //Public variable for width of camera box
     public float zoomSize;         //how large to start the camera
@@ -20,7 +20,6 @@ public class CamControl2 : MonoBehaviour
     private bool startUpdate;
 
     private PlayerController controller;
-    private LaserController laserCont;
 
     // Use this for initialization
     void Start()
@@ -30,9 +29,6 @@ public class CamControl2 : MonoBehaviour
         gravBoiPoint = new Vector3(player.transform.position.x, player.transform.position.y, -10);
 
         controller = player.GetComponent<PlayerController>();
-        if(laserMove != null){
-            laserCont = laserMove.GetComponent<LaserController>();
-        }
 
         startUpdate = false;
 
@@ -93,8 +89,11 @@ public class CamControl2 : MonoBehaviour
         if (startUpdate == false)
         {
             controller.startUpdating();
-            if(laserMove != null){
-                laserCont.startMovement();
+            if(laserMove.Length != 0){
+                for(int i = 0; i < laserMove.Length; i++){
+                    LaserController laserCont = laserMove[i].GetComponent<LaserController>();
+                    laserCont.startMovement();
+                }
             }
         }
         startUpdate = true;
