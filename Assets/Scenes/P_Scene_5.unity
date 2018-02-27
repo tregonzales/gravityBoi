@@ -1279,6 +1279,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114409044073709728, guid: 2e25651a8eb8d43e3bec52768c1e4ff3,
+        type: 2}
+      propertyPath: laserMove.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4671190966648830, guid: 2e25651a8eb8d43e3bec52768c1e4ff3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1329,6 +1334,11 @@ Prefab:
     - target: {fileID: 114409044073709728, guid: 2e25651a8eb8d43e3bec52768c1e4ff3,
         type: 2}
       propertyPath: laserMove
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114409044073709728, guid: 2e25651a8eb8d43e3bec52768c1e4ff3,
+        type: 2}
+      propertyPath: laserMove.Array.data[0]
       value: 
       objectReference: {fileID: 1842022037}
     m_RemovedComponents: []
