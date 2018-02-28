@@ -6,6 +6,7 @@ public class gateController : MonoBehaviour {
 
 	private AudioSource gateSound;
 	private bool played;
+	public bool bonusLevel;
 	// Use this for initialization
 	void Start () {
 		played = false;
@@ -26,7 +27,12 @@ public class gateController : MonoBehaviour {
 				gateSound.Play();
 				played = true;
 			}
-			GameManager.instance.LoadNextScene(.5f);
+			if (bonusLevel) {
+				GameManager.instance.LoadSceneByIndex(19);
+			}
+			else {
+				GameManager.instance.LoadNextScene(.5f);
+			}
 		}
 	}
 }
