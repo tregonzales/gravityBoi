@@ -4,37 +4,25 @@ using UnityEngine;
 using System;
 
 public class AsteroidGenerator : MonoBehaviour {
-//	public int numAsteroids, maxXVelocity, maxYVelocity;
-	public Vector3[] AsteroidVelo;
-	public float minSize, maxSize;
-	public GameObject[] possibleAsteroids;
-	// Use this for initialization
+	public Vector3[] AsteroidVelo; //hold asteroid initial velocity
+	public float minSize, maxSize; //scale limits
+	public GameObject[] possibleAsteroids; //possible prefabs
 
 	void Start () {
-       	///* 
-		//UnityEngine.Random rand = new UnityEngine.Random();
 		for(int i = 0; i < AsteroidVelo.Length; i++){
-			//Debug.Log(Time.time);
             //Random number to select asteroid
 			int r = (int)UnityEngine.Random.Range(0.0f,(float)possibleAsteroids.Length);
 			//instantiate
 			GameObject o = (GameObject)Instantiate(possibleAsteroids[r]);
-			//randomly scale x any y evenly
+			//random number to scale x any y evenly
 			double size = (double)UnityEngine.Random.Range(0.0f,1.0f)*(maxSize-minSize) + minSize;
-			
+			//give position where it doesn't collide with others
 			o.transform.position = new Vector3(transform.position.x + AsteroidVelo[i].x,transform.position.y + AsteroidVelo[i].y,transform.position.z);
-
+			//scale asteroid
 			o.transform.localScale = new Vector3((float)size,(float)size,0);
 			AsteroidVelo[i].z = 0;
+			//give the asteroid its initial velocity
 			o.GetComponent<Rigidbody2D>().velocity = AsteroidVelo[i];
-			
 		}
-		//*/
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		//do nothing
 	}
 }
