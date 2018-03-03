@@ -33,11 +33,9 @@ public class PlayerController : MonoBehaviour {
 		curSpeed = antiGravBoostSpeed;
 	}
 	
-	
-	// Update is called once per frame
-	void Update () {
+		void Update () {
 
-
+		//make sure the player is in a moveable state
 		if (!GameManager.instance.paused && startUpdate && isDead == false) {
 			//toggle gravity and change the speed of boost depending on current gravity 
 			if (Input.GetKeyDown(KeyCode.Space)){
@@ -70,6 +68,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	//rotation of the character
 	void OrientRobot(Vector2 direction){
 
 		if (direction.x == 0 && direction.y == 0) {
@@ -83,6 +82,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	//laser death animation
 	public void dieLaser() {
         isDead = true;
 		spriteRenderer.sprite = broke;

@@ -10,18 +10,16 @@ public class gravityIndicator : MonoBehaviour {
 	private Image img;
 	private float toggle;
 
-	// Use this for initialization
 	void Start () {
 		img = GetComponent<Image>();
 		toggle = GameObject.Find("GravityBoi").GetComponent<Rigidbody2D>().gravityScale;
 		updateGravity(toggle);
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
-
+	//simply toggle the on off sprite
 	public void updateGravity(float toggle) {
 		img.sprite = toggle == 0 ? frames[0] : frames[1];
 	}

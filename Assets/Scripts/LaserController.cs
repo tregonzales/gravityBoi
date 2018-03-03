@@ -23,6 +23,7 @@ public class LaserController : MonoBehaviour {
         StartCoroutine(PlayAnimation());
     }
 
+    //the surging laser animation
     IEnumerator PlayAnimation()
     {
         int currentFrameIndex = 0;
@@ -33,7 +34,6 @@ public class LaserController : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
 	void Update () {
         if (degreesPerSecond != 0) {
             transform.Rotate(0, 0, degreesPerSecond*Time.deltaTime);
@@ -53,6 +53,8 @@ public class LaserController : MonoBehaviour {
     public void startMovement(){
         startUpdating = true;
     }
+    
+    //move the laser along x and/or y axis
     void Move(){
         if(!startUpdating){
             return;

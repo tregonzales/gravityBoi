@@ -19,14 +19,14 @@ public class gateController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		//Debug.Log(other.gameObject.tag + "    " + other.GetComponent<SpriteRenderer>().sprite.name);//ADDED
 
-
+		//see if the character is alive and then pass to next level
 		if (other.gameObject.CompareTag("Player") && other.GetComponent<SpriteRenderer>().sprite.name == "character") {
 			if (!played) {
 				gateSound.Play();
 				played = true;
 			}
+			//if its the bonus level then you go back to the end screen
 			if (bonusLevel) {
 				GameManager.instance.LoadSceneByIndex(19);
 			}
