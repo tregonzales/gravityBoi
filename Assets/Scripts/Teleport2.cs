@@ -4,28 +4,26 @@ using UnityEngine;
 
 public class Teleport2 : MonoBehaviour {
 
-    public GameObject targetGate;
+    // Gate to teleport to
+    public GameObject targetGate;   
+
+    // Player
     public GameObject boi;
+
+    // Which way the target gate is facing for getting correct directional change
     public string targetOrientation;
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Check if player has collided with gate
         if(!other.gameObject.tag.Equals("Player")){
             return;
         }
+
+        // Set player's position to the target gate's position
         boi.transform.position = new Vector2(targetGate.transform.position.x, targetGate.transform.position.y);
 
+        // Set velocity of the player in the correct direction with the same magnitude
         if (targetOrientation == "up")
         {
             boi.GetComponent<Rigidbody2D>().velocity = Vector2.up * boi.GetComponent<Rigidbody2D>().velocity.magnitude;
@@ -43,6 +41,7 @@ public class Teleport2 : MonoBehaviour {
             boi.GetComponent<Rigidbody2D>().velocity = Vector2.left * boi.GetComponent<Rigidbody2D>().velocity.magnitude;
         }
 
+        // Teleport Sound
         GetComponent<AudioSource>().Play();
     }
 }
