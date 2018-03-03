@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 20223400578135268}
   - component: {fileID: 124721232090112394}
   - component: {fileID: 81289968762646858}
-  - component: {fileID: 114110210476404360}
   - component: {fileID: 114409044073709728}
   m_Layer: 0
   m_Name: Main Camera
@@ -87,18 +86,6 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640750364694516}
   m_Enabled: 1
---- !u!114 &114110210476404360
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1640750364694516}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aa9d28ba11d5418d9d5e1dcd5c931c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &114409044073709728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,9 +98,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  laserMove: []
   boxHeight: 1
   boxWidth: 1
   zoomSize: 15
+  xCenter: 0
+  yCenter: 0
 --- !u!124 &124721232090112394
 Behaviour:
   m_ObjectHideFlags: 1
